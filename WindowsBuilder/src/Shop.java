@@ -4,6 +4,8 @@ import javax.swing.JFrame;
 import javax.swing.BoxLayout;
 import javax.swing.JTextArea;
 import javax.swing.JScrollPane;
+import java.awt.event.MouseMotionAdapter;
+import java.awt.event.MouseEvent;
 
 public class Shop {
 
@@ -46,6 +48,12 @@ public class Shop {
 		frame.getContentPane().add(scrollPane);
 		
 		JTextArea txtrText = new JTextArea();
+		txtrText.addMouseMotionListener(new MouseMotionAdapter() {
+			@Override
+			public void mouseDragged(MouseEvent e) {
+				txtrText.setText("Jetzt ist weg");
+			}
+		});
 		scrollPane.setViewportView(txtrText);
 		txtrText.setText("Bitte hier Text eintippen");
 	}
