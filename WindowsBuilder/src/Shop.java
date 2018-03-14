@@ -39,14 +39,15 @@ public class Shop {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 594, 451);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.getContentPane().setLayout(new BoxLayout(frame.getContentPane(), BoxLayout.X_AXIS));
+		frame.getContentPane().setLayout(null);
 		
 		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setBounds(0, 0, 578, 412);
 		frame.getContentPane().add(scrollPane);
 		
 		JTextArea txtrText = new JTextArea();
 		scrollPane.setViewportView(txtrText);
-		txtrText.setText("Text");
+		txtrText.setText("Bitte hier Text eintippen");
 	}
 
 }
