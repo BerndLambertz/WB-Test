@@ -13,6 +13,7 @@ public class Shop {
 
 	/**
 	 * Launch the application.
+	 * test application
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
